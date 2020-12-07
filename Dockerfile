@@ -13,7 +13,7 @@ RUN apt-get build-dep openttd -y
 RUN apt-get install git cmake wget unzip python3 -y
 
 # JGRPP OPENTTD BUILD SETUP
-RUN git clone https://github.com/internet-trains/OpenTTD-patches.git --branch=jgrpp-0.37.0 openttd && mkdir openttd/build
+RUN git clone https://github.com/JGRennison/OpenTTD-patches --branch=jgrpp-0.39.1 openttd && mkdir openttd/build
 
 # MAKE OPENTTD
 WORKDIR openttd/build/
