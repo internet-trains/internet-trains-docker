@@ -1,9 +1,13 @@
 FROM ubuntu:latest
 
-# ENV
-ENV DEBIAN_FRONTEND=noninteractive
 LABEL maintainer="https://github.com/internet-trains/internet-trains-docker/"
 
+ENV DEBIAN_FRONTEND=noninteractive \
+    PORT=3797 \
+    ADMIN_PORT=3977 \
+    USER_FOLDER=/root/.local/share \
+    SOURCE=https://github.com/JGRennison/OpenTTD-patches \
+    BRANCH=jgrpp-0.39.1
 
 # FIX FOR BUILD-DEPS
 RUN cp /etc/apt/sources.list /etc/apt/sources.list~
