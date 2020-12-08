@@ -2,6 +2,8 @@ FROM ubuntu:latest
 
 # ENV
 ENV DEBIAN_FRONTEND=noninteractive
+LABEL maintainer="https://github.com/internet-trains/internet-trains-docker/"
+
 
 # FIX FOR BUILD-DEPS
 RUN cp /etc/apt/sources.list /etc/apt/sources.list~
