@@ -3,7 +3,7 @@ FROM ubuntu:latest
 LABEL maintainer="https://github.com/internet-trains/internet-trains-docker/"
 
 ENV DEBIAN_FRONTEND=noninteractive \
-    PORT=3797 \
+    PORT=3979 \
     ADMIN_PORT=3977 \
     USER_FOLDER=/root/.local/share \
     SOURCE=https://github.com/JGRennison/OpenTTD-patches \
@@ -41,3 +41,5 @@ RUN python3 ./gen_api_binding.py
 # EXPOSE PORTS
 EXPOSE $PORT/tcp $PORT/udp
 EXPOSE $ADMIN_PORT/tcp $ADMIN_PORT/udp
+
+STOPSIGNAL SIGQUIT
