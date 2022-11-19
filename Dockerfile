@@ -25,7 +25,7 @@ RUN git clone "$SOURCE" --branch="$BRANCH" openttd \
 # MAKE OPENTTD
 WORKDIR openttd/build/
 RUN ls && cmake .. && make --jobs=5
-RUN cd baseset && wget https://cdn.openttd.org/opengfx-releases/0.6.0/opengfx-0.6.0-all.zip -O opengfx.zip && unzip opengfx.zip
+RUN cd baseset && wget https://cdn.openttd.org/opengfx-releases/0.7.1/opengfx-0.7.1-all.zip -O opengfx.zip && unzip opengfx.zip
 
 # CONFIG SETUP
 COPY openttd.cfg /root/.config/openttd/openttd.cfg
