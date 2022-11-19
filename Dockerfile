@@ -30,7 +30,7 @@ RUN cd baseset && wget https://cdn.openttd.org/opengfx-releases/0.6.0/opengfx-0.
 # CONFIG SETUP
 COPY openttd.cfg /root/.config/openttd/openttd.cfg
 COPY cdn.cfg /root/.config/openttd/cdn.cfg
-COPY download_content.py
+COPY download_content.py .
 
 
 # SERVER GS
