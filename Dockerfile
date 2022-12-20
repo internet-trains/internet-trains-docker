@@ -7,7 +7,7 @@ ENV DEBIAN_FRONTEND=noninteractive \
     ADMIN_PORT=3977 \
     USER_FOLDER=/root/.local/share \
     SOURCE=https://github.com/JGRennison/OpenTTD-patches \
-    BRANCH=jgrpp-0.39.1
+    BRANCH=jgrpp-0.50.0
 
 # FIX FOR BUILD-DEPS
 RUN cp /etc/apt/sources.list /etc/apt/sources.list~
